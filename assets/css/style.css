@@ -96,15 +96,15 @@ button {
   font-size: 11px;
   margin-top: 1.5rem;
 }
-.header .breadcrumb ol {
+.header .breadcrumb .breadcrumb__list {
   display: flex;
   flex-wrap: wrap;
 }
-.header .breadcrumb ol li:not(:last-child)::after {
+.header .breadcrumb .breadcrumb__list li:not(:last-child)::after {
   content: ">";
   margin: 0 4px;
 }
-.header .breadcrumb ol a {
+.header .breadcrumb .breadcrumb__list .breadcrumb__list-link {
   color: #1558d6;
 }
 .header .header__title {
@@ -136,14 +136,14 @@ button {
     align-items: baseline;
   }
 }
-.footer .footer__link {
+.footer .footer__links {
   display: grid;
   grid-template-columns: repeat(2, 120px);
   grid-template-rows: repeat(2, 40px);
   gap: 1rem;
   justify-content: center;
 }
-.footer .footer__link a {
+.footer .footer__links .footer__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -159,7 +159,7 @@ button {
   font-size: 16px;
   margin-bottom: 1rem;
 }
-.footer .footer__info p {
+.footer .footer__info .footer__detail {
   font-size: 12px;
   line-height: 2;
 }
@@ -174,23 +174,81 @@ button {
 }
 
 /* =========================
-    Main
+    Top-Main
 ========================= */
-.hero-image--sp {
+.top-main .hero-image--sp {
   width: 100%;
 }
 @media (min-width: 900px) {
-  .hero-image--sp {
+  .top-main .hero-image--sp {
     display: none;
   }
 }
-
-.hero-image--pc {
+.top-main .hero-image--pc {
   display: none;
 }
 @media (min-width: 900px) {
-  .hero-image--pc {
+  .top-main .hero-image--pc {
     display: block;
     width: 100%;
   }
+}
+.top-main .content__desc {
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+.top-main .content__desc .content__title {
+  font-size: 24px;
+  margin-bottom: 2rem;
+}
+.top-main .content__desc .content__text {
+  font-size: 13px;
+}
+
+/* ---------- Staff list ---------- */
+.staff-list {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+}
+@media (min-width: 900px) {
+  .staff-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+.staff-list .staff-card .staff-card__image {
+  margin: 0 auto;
+  width: 200px;
+  border-radius: 50%;
+  border: 10px solid #f1f1f1;
+}
+.staff-list .staff-card .staff-card__content {
+  position: relative;
+  width: 80%;
+  margin: 2rem auto 0;
+}
+.staff-list .staff-card .staff-card__content .card__budge {
+  position: absolute;
+  width: 24px;
+  height: auto;
+  top: -22px;
+  left: -22px;
+}
+.staff-list .staff-card .staff-card__content .card__title {
+  font-size: 16px;
+}
+.staff-list .staff-card .staff-card__content .card__time {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  font-size: 11px;
+}
+.staff-list .staff-card .staff-card__content .card__text {
+  font-size: 13px;
+}
+.staff-list .staff-card .staff-card__content .card__link {
+  display: flex;
+  font-size: 13px;
+  gap: 0.5rem;
+  margin-top: 1rem;
 }

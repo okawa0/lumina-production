@@ -15,8 +15,8 @@
           <div class="header__top">
             <img src="assets/images/logo.svg" alt="テラノプロダクション ロゴ" class="header__logo"/>
             <nav aria-label="パンくずリスト" class="breadcrumb">
-              <ol>
-                <li><a href="/">HOME</a></li>
+              <ol class="breadcrumb__list">
+                <li><a href="/" class="breadcrumb__list-link">HOME</a></li>
                 <li>スタッフ紹介</li>
               </ol>
             </nav>
@@ -25,26 +25,91 @@
         </div>
       </div>
     </header>
-    <main>
+    <main class="top-main">
       <div class="hero">
         <img src="assets/images/mv-sp.jpg" alt="" class="hero-image--sp">
         <img src="assets/images/mv-pc.jpg" alt="" class="hero-image--pc">
+      </div>
+      <div class="container content">
+        <div class="content__desc">
+          <h1 class="content__title">スタッフ紹介</h1>
+          <p class="content__text">概要やリード文が入ります概要やリード文が入ります概要やリード文が入ります。</p>
+          <p class="content__text">概要やリード文が入ります概要やリード文が入ります概要やリード文が入ります。</p>
+        </div>
+        <div class="staff-list">
+          <div class="staff-card">
+            <img src="assets/images/staff-1.png" alt="スタッフ写真" class="staff-card__image"/>
+            <div class="staff-card__content">
+              <span class="card__budge"><img src="assets/images/new.svg" alt="new"></span>
+              <h2 class="card__title">名前が入ります（職種が入ります）</h2>
+              <time datetime="2022-03-01" class="card__time">2022年3月1日（火）</time>
+              <p class="card__text">インタビューテキストインタビューテキストインタビューテキストインタビューテキスト...</p>
+              <a href="#" class="card__link">続きを読む<img src="assets/images/arrow.svg" alt="矢印"></a>
+            </div>
+          </div>
+          <div class="staff-card">
+            <img src="assets/images/staff-2.png" alt="スタッフ写真" class="staff-card__image"/>
+            <div class="staff-card__content">
+              <span class="card__budge"><img src="assets/images/new.svg" alt="new"></span>
+              <h2 class="card__title">名前が入ります（職種が入ります）</h2>
+              <time datetime="2022-03-01" class="card__time">2022年3月1日（火）</time>
+              <p class="card__text">インタビューテキストインタビューテキストインタビューテキストインタビューテキスト...</p>
+              <a href="#" class="card__link">続きを読む<img src="assets/images/arrow.svg" alt="矢印"></a>
+            </div>
+          </div>
+          <div class="staff-card">
+            <img src="assets/images/staff-3.png" alt="スタッフ写真" class="staff-card__image"/>
+            <div class="staff-card__content">
+              <h2 class="card__title">名前が入ります（職種が入ります）</h2>
+              <time datetime="2022-03-01" class="card__time">2022年3月1日（火）</time>
+              <p class="card__text">インタビューテキストインタビューテキストインタビューテキストインタビューテキスト...</p>
+              <a href="#" class="card__link">続きを読む<img src="assets/images/arrow.svg" alt="矢印"></a>
+            </div>
+          </div>
+          <div class="staff-card">
+            <img src="assets/images/staff-4.png" alt="スタッフ写真" class="staff-card__image"/>
+            <div class="staff-card__content">
+              <h2 class="card__title">名前が入ります（職種が入ります）</h2>
+              <time datetime="2022-03-01" class="card__time">2022年3月1日（火）</time>
+              <p class="card__text">インタビューテキストインタビューテキストインタビューテキストインタビューテキスト...</p>
+              <a href="#" class="card__link">続きを読む<img src="assets/images/arrow.svg" alt="矢印"></a>
+            </div>
+          </div>
+          <div class="staff-card">
+            <img src="assets/images/staff-5.png" alt="スタッフ写真" class="staff-card__image"/>
+            <div class="staff-card__content">
+              <h2 class="card__title">名前が入ります（職種が入ります）</h2>
+              <time datetime="2022-03-01" class="card__time">2022年3月1日（火）</time>
+              <p class="card__text">インタビューテキストインタビューテキストインタビューテキストインタビューテキスト...</p>
+              <a href="#" class="card__link">続きを読む<img src="assets/images/arrow.svg" alt="矢印"></a>
+            </div>
+          </div>
+          <div class="staff-card">
+            <img src="assets/images/staff-6.png" alt="スタッフ写真" class="staff-card__image"/>
+            <div class="staff-card__content">
+              <h2 class="card__title">名前が入ります（職種が入ります）</h2>
+              <time datetime="2022-03-01" class="card__time">2022年3月1日（火）</time>
+              <p class="card__text">インタビューテキストインタビューテキストインタビューテキストインタビューテキスト...</p>
+              <a href="#" class="card__link">続きを読む<img src="assets/images/arrow.svg" alt="矢印"></a>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
     <footer class="footer">
       <div class="container">
         <div class="footer__inner">
-          <div class="footer__link">
-            <a href="#">リンク</a>
-            <a href="#">リンク</a>
-            <a href="#">リンク</a>
-            <a href="#">リンク</a>
+          <div class="footer__links">
+            <a href="#" class="footer__link">リンク</a>
+            <a href="#" class="footer__link">リンク</a>
+            <a href="#" class="footer__link">リンク</a>
+            <a href="#" class="footer__link">リンク</a>
           </div>
           <div class="footer__info">
             <p class="footer__company">テラノプロダクション</p>
-            <p>東京都渋谷区XXXXXXXXXXXX</p>
-            <p>XXXXXXXX 3階</p>
-            <p>TEL 03-XXXX-XXXX FAX 03-XXXX-XXXX</p>
+            <p class="footer__detail">東京都渋谷区XXXXXXXXXXXX</p>
+            <p class="footer__detail">XXXXXXXX 3階</p>
+            <p class="footer__detail">TEL 03-XXXX-XXXX FAX 03-XXXX-XXXX</p>
           </div>
         </div>
         <div class="footer__copyright">
