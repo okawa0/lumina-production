@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* =========================
     Reset
 ========================= */
@@ -193,24 +194,10 @@ button {
     width: 100%;
   }
 }
-.top-main .content {
-  padding-top: 3rem;
-  padding-bottom: 5rem;
-}
-.top-main .content .content__desc {
-  margin-bottom: 5rem;
-}
-.top-main .content .content__desc .content__title {
-  font-size: 24px;
-  margin-bottom: 2rem;
-}
-.top-main .content .content__desc .content__text {
-  font-size: 13px;
-}
-.top-main .content .btn-wrapper {
+.top-main .btn-wrapper {
   text-align: center;
 }
-.top-main .content .btn-wrapper .list-btn {
+.top-main .btn-wrapper .list-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -220,28 +207,34 @@ button {
   border-radius: 0.8rem;
   gap: 1rem;
 }
-.top-main .content .btn-wrapper .list-btn .list-button__text {
+.top-main .btn-wrapper .list-btn .list-button__text {
   font-size: 13px;
   font-weight: 700;
 }
-.top-main .content .banners {
-  display: none;
+
+.content {
+  padding-top: 2rem;
+  padding-bottom: 5rem;
 }
 @media (min-width: 900px) {
-  .top-main .content .banners {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
-    margin-top: 8rem;
+  .content {
+    padding-top: 3rem;
   }
 }
-.top-main .content .banners .banner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 219px;
-  height: 72px;
-  background-image: url(../images/banner-img.jpg);
+.content .content__desc {
+  margin-bottom: 3rem;
+}
+@media (min-width: 900px) {
+  .content .content__desc {
+    margin-bottom: 5rem;
+  }
+}
+.content .content__desc .content__title {
+  font-size: 24px;
+  margin-bottom: 2rem;
+}
+.content .content__desc .content__text {
+  font-size: 13px;
 }
 
 /* ---------- Staff list ---------- */
@@ -249,12 +242,13 @@ button {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 2rem;
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
 }
 @media (min-width: 900px) {
   .staff-list {
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    gap: 3rem 0;
+    margin-bottom: 4rem;
   }
 }
 .staff-list .staff-card .staff-card__image {
@@ -291,4 +285,60 @@ button {
   font-size: 13px;
   gap: 0.5rem;
   margin-top: 1rem;
+}
+
+/* ---------- Banners ---------- */
+.banners {
+  display: none;
+}
+@media (min-width: 900px) {
+  .banners {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-top: 8rem;
+  }
+}
+.banners .banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 219px;
+  height: 72px;
+  background-image: url(../images/banner-img.jpg);
+}
+
+/* =========================
+    スタッフ一覧ページ
+========================= */
+.pagination-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-block: 5px solid #1ddb07;
+  padding-block: 1rem;
+  font-size: 13px;
+}
+@media (min-width: 900px) {
+  .pagination-wrapper {
+    padding: 1rem 2rem;
+    border-block-width: 7px;
+  }
+}
+.pagination-wrapper .prev,
+.pagination-wrapper .next {
+  display: flex;
+  gap: 1rem;
+}
+
+.list-main .banners {
+  margin-top: 5rem;
+}
+.list-main .content {
+  padding-top: 0;
+}
+@media (min-width: 900px) {
+  .list-main .content {
+    padding-top: 3rem;
+  }
 }

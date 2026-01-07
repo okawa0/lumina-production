@@ -191,53 +191,41 @@ button {
       width: 100%;
     }
   }
-  .content {
-    padding-top: 3rem;
-    padding-bottom: 5rem;
-    .content__desc {
-      margin-bottom: 5rem;
-      .content__title {
-        font-size: 24px;
-        margin-bottom: 2rem;
-      }
-      .content__text {
+  .btn-wrapper {
+    text-align: center;
+    .list-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #1ddb07;
+      color: #fff;
+      padding: 0.8rem 2rem 0.8rem 3rem;
+      border-radius: 0.8rem;
+      gap: 1rem;
+      .list-button__text {
         font-size: 13px;
+        font-weight: 700;
       }
     }
-
-    .btn-wrapper {
-      text-align: center;
-      .list-btn {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #1ddb07;
-        color: #fff;
-        padding: 0.8rem 2rem 0.8rem 3rem;
-        border-radius: 0.8rem;
-        gap: 1rem;
-        .list-button__text {
-          font-size: 13px;
-          font-weight: 700;
-        }
-      }
+  }
+}
+.content {
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+  @media (min-width: 900px) {
+    padding-top: 3rem;
+  }
+  .content__desc {
+    margin-bottom: 3rem;
+    @media (min-width: 900px) {
+      margin-bottom: 5rem;
     }
-    .banners{
-      display: none;
-      @media (min-width: 900px) {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 2rem;
-        margin-top: 8rem;
-      }
-      .banner{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 219px;
-        height: 72px;
-        background-image: url(../images/banner-img.jpg);
-      }
+    .content__title {
+      font-size: 24px;
+      margin-bottom: 2rem;
+    }
+    .content__text {
+      font-size: 13px;
     }
   }
 }
@@ -246,10 +234,11 @@ button {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 2rem;
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
   @media (min-width: 900px) {
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    gap: 3rem 0;
+    margin-bottom: 4rem;
   }
   .staff-card {
     .staff-card__image {
@@ -286,6 +275,59 @@ button {
         gap: 0.5rem;
         margin-top: 1rem;
       }
+    }
+  }
+}
+
+/* ---------- Banners ---------- */
+.banners {
+  display: none;
+  @media (min-width: 900px) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-top: 8rem;
+  }
+  .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 219px;
+    height: 72px;
+    background-image: url(../images/banner-img.jpg);
+  }
+}
+
+/* =========================
+    スタッフ一覧ページ
+========================= */
+
+.pagination-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-block: 5px solid #1ddb07;
+  padding-block: 1rem;
+  font-size: 13px;
+  @media (min-width: 900px) {
+    padding: 1rem 2rem;
+    border-block-width: 7px;
+  }
+  .prev,
+  .next {
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+.list-main {
+  .banners {
+    margin-top: 5rem;
+  }
+  .content {
+    padding-top: 0;
+    @media (min-width: 900px) {
+      padding-top: 3rem;
     }
   }
 }
