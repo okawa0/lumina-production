@@ -174,10 +174,10 @@ button {
 }
 
 /* =========================
-    Top-Main
+    スタッフ紹介ページ
 ========================= */
 
-.top-main {
+.main--top {
   .hero-image--sp {
     width: 100%;
     @media (min-width: 900px) {
@@ -223,6 +223,9 @@ button {
     .content__title {
       font-size: 24px;
       margin-bottom: 2rem;
+      @media (min-width: 900px) {
+        font-size: 36px;
+      }
     }
     .content__text {
       font-size: 13px;
@@ -295,6 +298,7 @@ button {
     width: 219px;
     height: 72px;
     background-image: url(../images/banner-img.jpg);
+    font-weight: 700;
   }
 }
 
@@ -320,7 +324,7 @@ button {
   }
 }
 
-.list-main {
+.main--list {
   .banners {
     margin-top: 5rem;
   }
@@ -331,3 +335,7 @@ button {
     }
   }
 }
+
+/* =========================
+    スタッフ詳細ページ
+========================= */

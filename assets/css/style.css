@@ -175,29 +175,29 @@ button {
 }
 
 /* =========================
-    Top-Main
+    スタッフ紹介ページ
 ========================= */
-.top-main .hero-image--sp {
+.main--top .hero-image--sp {
   width: 100%;
 }
 @media (min-width: 900px) {
-  .top-main .hero-image--sp {
+  .main--top .hero-image--sp {
     display: none;
   }
 }
-.top-main .hero-image--pc {
+.main--top .hero-image--pc {
   display: none;
 }
 @media (min-width: 900px) {
-  .top-main .hero-image--pc {
+  .main--top .hero-image--pc {
     display: block;
     width: 100%;
   }
 }
-.top-main .btn-wrapper {
+.main--top .btn-wrapper {
   text-align: center;
 }
-.top-main .btn-wrapper .list-btn {
+.main--top .btn-wrapper .list-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -207,7 +207,7 @@ button {
   border-radius: 0.8rem;
   gap: 1rem;
 }
-.top-main .btn-wrapper .list-btn .list-button__text {
+.main--top .btn-wrapper .list-btn .list-button__text {
   font-size: 13px;
   font-weight: 700;
 }
@@ -232,6 +232,11 @@ button {
 .content .content__desc .content__title {
   font-size: 24px;
   margin-bottom: 2rem;
+}
+@media (min-width: 900px) {
+  .content .content__desc .content__title {
+    font-size: 36px;
+  }
 }
 .content .content__desc .content__text {
   font-size: 13px;
@@ -306,6 +311,7 @@ button {
   width: 219px;
   height: 72px;
   background-image: url(../images/banner-img.jpg);
+  font-weight: 700;
 }
 
 /* =========================
@@ -331,14 +337,18 @@ button {
   gap: 1rem;
 }
 
-.list-main .banners {
+.main--list .banners {
   margin-top: 5rem;
 }
-.list-main .content {
+.main--list .content {
   padding-top: 0;
 }
 @media (min-width: 900px) {
-  .list-main .content {
+  .main--list .content {
     padding-top: 3rem;
   }
 }
+
+/* =========================
+    スタッフ詳細ページ
+========================= */
