@@ -191,23 +191,27 @@ button {
       width: 100%;
     }
   }
-  .btn-wrapper {
-    text-align: center;
-    .list-btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      background-color: #1ddb07;
-      color: #fff;
-      padding: 0.8rem 2rem 0.8rem 3rem;
-      border-radius: 0.8rem;
-      gap: 1rem;
-      .list-button__text {
-        font-size: 13px;
-        font-weight: 700;
-      }
+}
+// スタッフ一覧へのボタン
+.btn-wrapper {
+  text-align: center;
+  .list-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1ddb07;
+    color: #fff;
+    padding: 0.8rem 2rem 0.8rem 3rem;
+    border-radius: 0.8rem;
+    gap: 1rem;
+    .list-button__text {
+      font-size: 13px;
+      font-weight: 700;
     }
   }
+}
+.btn-wrapper--detail {
+  margin-bottom: 3rem;
 }
 .content {
   padding-top: 2rem;
@@ -344,73 +348,78 @@ button {
     display: grid;
     grid-template-columns: 1fr 258px;
     gap: 7rem;
+    margin-bottom: 5rem;
   }
   .staff-list--detail {
     display: block;
     .staff-card__content--detail {
       width: 100%;
-      .share-btn-wrapper{
+      .share-btn-wrapper {
         display: flex;
-      gap: .5rem;
-      .share-btn {
-        border: 1px solid #333;
-        border-radius: 50%;
-        width: 40px;
-        height: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0;
-        font-size: 1.2rem;
-        background: #fff;
+        gap: 0.5rem;
+        .share-btn {
+          border: 1px solid #333;
+          border-radius: 50%;
+          width: 40px;
+          height: 40px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0;
+          font-size: 1.2rem;
+          background: #fff;
+        }
       }
-    }}
+    }
   }
-  .article{
-    &:not(:first-child){
+  .article {
+    &:not(:first-child) {
       margin-top: 3rem;
     }
-    .article__title{
+    .article__title {
       font-size: 16px;
-      @media (min-width:900px){
+      @media (min-width: 900px) {
         margin-bottom: 2rem;
       }
     }
-    .article__img{
+    .article__img {
       border-radius: 20px;
       width: 100%;
-      @media (min-width:900px){
+      @media (min-width: 900px) {
         width: 274px;
         margin: 0 0 2rem 2rem;
       }
     }
-    .float-right{
+    .float-right {
       float: none;
       margin: 1.5rem auto;
-      @media (min-width:900px){
+      @media (min-width: 900px) {
         float: right;
         margin: 0 0 2rem 2rem;
       }
     }
-    .float-left{
+    .float-left {
       float: none;
-      margin:1.5rem auto;
-      @media (min-width:900px){
+      margin: 1.5rem auto;
+      @media (min-width: 900px) {
         float: left;
         margin: 0 2rem 2rem 0;
       }
     }
-    .article__text{
+    .article__text {
       font-size: 13px;
-      line-height:26px;
+      line-height: 26px;
     }
     .vertical-dots::after {
-  content: "•\A•\A•";
-  white-space: pre;
-  display: block;
-  text-align: center;
-  line-height: 1.2;
-}
+      content: "・\A・\A・";
+      white-space: pre;
+      display: block;
+      text-align: center;
+      line-height: 0.6;
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-block: 3rem;
+    }
   }
   .aside__link {
     display: none;
